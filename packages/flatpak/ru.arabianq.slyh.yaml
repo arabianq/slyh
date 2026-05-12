@@ -4,11 +4,11 @@ runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm18
+  - org.freedesktop.Sdk.Extension.llvm20
 
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin
-  append-ld-library-path: /usr/lib/sdk/llvm18/lib
+  append-ld-library-path: /usr/lib/sdk/llvm20/lib
   build-args:
     - --share=network
   env:
