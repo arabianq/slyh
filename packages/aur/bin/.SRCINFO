@@ -1,5 +1,5 @@
 pkgbase = slyh-bin
-	pkgdesc = Simple crossplatform audio player
+	pkgdesc = Simple yet powerful audio player
 	pkgver = 1.0.0
 	pkgrel = 1
 	url = https://github.com/arabianq/slyh

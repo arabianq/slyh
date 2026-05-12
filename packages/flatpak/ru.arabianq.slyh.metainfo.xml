@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>ru.arabianq.slyh</id>
   <name>Slyh</name>
-  <summary>Simple crossplatform audio player</summary>
+  <summary>Simple yet powerful audio player</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
 

@@ -6,7 +6,7 @@
 Name:            slyh
 Version:         1.0.0
 Release:         %autorelease
-Summary:         Simple crossplatform audio player
+Summary:         Simple yet powerful audio player
 
 License:         MIT
 
