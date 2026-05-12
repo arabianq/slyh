@@ -47,5 +47,5 @@ depends = "$auto"
 assets = [
     ["target/release/slyh", "usr/bin/", "755"],
     ["assets/slyh.desktop", "usr/share/applications/", "644"],
-    ["assets/icon.png", "usr/share/icons/hicolor/256x256/apps/slyh.png", "644"]
+    ["assets/icon.png", "usr/share/icons/hicolor/128x128/apps/slyh.png", "644"]
 ]

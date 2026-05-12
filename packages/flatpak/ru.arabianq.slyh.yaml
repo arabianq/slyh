@@ -32,7 +32,7 @@ modules:
       - cargo build --release --locked --offline
       - install -Dm755 /run/build/slyh/target/release/slyh -t /app/bin/
       - install -Dm644 assets/slyh.desktop /app/share/applications/ru.arabianq.slyh.desktop
-      - install -Dm644 assets/icon.png /app/share/icons/hicolor/256x256/apps/ru.arabianq.slyh.png
+      - install -Dm644 assets/icon.png /app/share/icons/hicolor/128x128/apps/ru.arabianq.slyh.png
       - install -Dm644 packages/flatpak/ru.arabianq.slyh.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: dir
