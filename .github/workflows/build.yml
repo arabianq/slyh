@@ -79,7 +79,7 @@ jobs:
         if: startsWith(matrix.os, 'macos')
         run: |
           cargo bundle --format osx --target ${{ matrix.target }}
-          APP_PATH="target/${{ matrix.target }}/release/bundle/osx/Slyh.app"
+          APP_PATH="target/${{ matrix.target }}/debug/bundle/osx/Slyh.app"
 
           DMG_NAME="slyh-${{ matrix.name }}.dmg"
           hdiutil create -volname "Slyh" -srcfolder "$APP_PATH" -ov -format UDZO "$DMG_NAME"
@@ -110,7 +110,7 @@ jobs:
         with:
           name: slyh-${{ matrix.name }}-assets
           path: |
-            target/${{ matrix.target }}/release/slyh.exe
+            target/${{ matrix.target }}/debug/slyh.exe
             target/wix/*.msi
 
       - name: Upload Linux Bundles
@@ -119,8 +119,8 @@ jobs:
         with:
           name: slyh-${{ matrix.name }}-bundles
           path: |
-            target/${{ matrix.target }}/release/bundle/deb/*.deb
-            target/${{ matrix.target }}/release/bundle/appimage/*.AppImage
+            target/${{ matrix.target }}/debug/bundle/deb/*.deb
+            target/${{ matrix.target }}/debug/bundle/appimage/*.AppImage
 
   flatpak-build:
     name: Build Flatpak
