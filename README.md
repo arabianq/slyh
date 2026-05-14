@@ -6,7 +6,7 @@ Slyh is a simple, lightweight, and cross-platform audio player built with Rust a
 
 ## Features ✨
 
-- **Cross-Platform:** Works on Linux, Windows, and macOS.
+- **Cross-Platform:** Works on Linux, Windows, and macOS (with limitations - https://github.com/arabianq/slyh/issues/5).
 - **Minimal UI:** Clean, intuitive interface powered by `egui`.
 - **Lightweight:** Built in Rust for high performance and low resource usage.
 - **Localization (i18n):** Automatically detects your system locale or can be configured manually.
