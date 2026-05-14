@@ -78,7 +78,7 @@ jobs:
       - name: Build macOS App Bundle & DMG
         if: startsWith(matrix.os, 'macos')
         run: |
-          cargo bundle --release --format osx --target ${{ matrix.target }}
+          cargo bundle --format osx --target ${{ matrix.target }}
           APP_PATH="target/${{ matrix.target }}/release/bundle/osx/Slyh.app"
 
           DMG_NAME="slyh-${{ matrix.name }}.dmg"
@@ -87,13 +87,13 @@ jobs:
       - name: Build Linux Bundles
         if: startsWith(matrix.os, 'ubuntu')
         run: |
-          cargo bundle --release --format deb --target ${{ matrix.target }}
-          cargo bundle --release --format appimage --target ${{ matrix.target }}
+          cargo bundle --format deb --target ${{ matrix.target }}
+          cargo bundle --format appimage --target ${{ matrix.target }}
 
       - name: Build binary and MSI (Windows)
         if: startsWith(matrix.os, 'windows')
         run: |
-          cargo build --release --locked --target ${{ matrix.target }}
+          cargo build --locked --target ${{ matrix.target }}
           cargo wix init
           cargo wix --target ${{ matrix.target }}
 
