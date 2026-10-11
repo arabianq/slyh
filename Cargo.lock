@@ -3409,12 +3409,13 @@ dependencies = [
 
 [[package]]
 name = "system-fonts"
-version = "0.1.0"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f369feb844d5e08bb4e938c3f88ff359261bc94c7553ddb34e174447120b64d6"
+checksum = "46ba78ea149d4bb0626dacad10aa789eedc83395889890a0e6e7ec69a4577442"
 dependencies = [
  "fontdb",
  "sys-locale",
+ "web-sys",
 ]
 
 [[package]]
