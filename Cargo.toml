@@ -38,7 +38,7 @@ eframe = { version = "0.34.3", default-features = false, features = [
 egui_material_icons = "0.6.0"
 egui-notify = "0.22.0"
 
-rodio = { git = "https://github.com/RustAudio/rodio.git", rev = "1f927962ab9018ec391972a3a3690c8ae1970218", features = [
+rodio = { git = "https://github.com/RustAudio/rodio.git", rev = "49a3fa0b71d31823405ef12ec5327b4aa33fccfb", features = [
     "symphonia-libopus",
 ] }
 lofty = "0.25.4"
